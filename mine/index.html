@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link css -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>RTE</title>
+  </head>
+  <body>
+    <h1>RECEP TAYİP ERDOĞAN</h1>
+    <div class="video-side">
+      <!-- video playing side -->
+      <video class="video">
+        <source
+          src="../video/Recep Tayyip Erdoğan - AK Parti Seçim Müziği 2014 (Uğur Işılak - Dombra).mp4"
+          type="video/mp4"
+        />
+        <source
+          src="../video/Recep Tayyip Erdoğan - AK Parti Seçim Müziği 2014 (Uğur Işılak - Dombra).mp4"
+          type="video/webm"
+        />
+        <p>Your browser doesn't support HTML5 video.</p>
+      </video>
+      <!-- control panel -->
+      <div class="control">
+        <div class="time-line">
+          <div class="time"></div>
+        </div>
+        
+        <button class="button" data-skip="-10">« 10s</button>
+        <button class="button change-button">
+            ►
+        </button>
+        <button class="button" data-skip="10">
+            10s »
+        </button>
+      </div>
+    </div>
+<script src="./app.js"></script>
+  </body>
+</html>

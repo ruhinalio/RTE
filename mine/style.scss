@@ -1,0 +1,60 @@
+//  general style
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background-color: rgba(255, 255, 255, 0.71);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    padding: 1rem 0.3rem;
+    color: rgb(214, 156, 165);
+    border: 5px solid rgba(0, 0, 0, 0.551);
+    border-radius: 8px;
+    background-color: aqua;
+  }
+}
+.video-side {
+    margin: 1rem 0;
+  width: 70%;
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+  .video {
+    width: 100%;
+  }
+  .control {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    .time-line {
+      flex: 10;
+      position: relative;
+      display: flex;
+      flex-basis: 100%;
+      
+      background: rgba(4, 2, 2, 0.264);
+      cursor: pointer;
+      height: .7rem;
+      &:hover{
+        height: .9rem;
+      }
+    }
+    button {
+      border: 1px solid rgba(0, 0, 0, 0.553);
+      padding: 0.5rem 0.3rem;
+      cursor: pointer;
+      width: 50px;
+      text-align: center;
+    }
+  }
+}
