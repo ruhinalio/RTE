@@ -17,33 +17,13 @@ function starting() {
 startStop.addEventListener("click", starting);
 
 function second() {
-    video.currentTime += Number(this.dataset.skip);
-  }
-  
-  secondary.forEach(btn => {
-    btn.addEventListener("click", second)
-  })
+  video.currentTime += Number(this.dataset.skip);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+secondary.forEach((btn) => {
+  btn.addEventListener("click", second);
+});
 
 document.addEventListener("keydown", (e) => {
-    e.code === "Space" && starting();
-  });
-  
+  e.code === "Space" && starting();
+});
